@@ -1,12 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        Coin coin = new Coin();
-        coin.flip();
+        Coin coin = new Coin(.9);
+        coin.flip(100);
         System.out.println("Coin state: " + coin.getState());
         System.out.println("Heads: " + coin.getHeads());
         System.out.println("Tails: " + coin.getTails());
-        coin.flip(99);
-        System.out.println("After flipping 99 times:");
+        coin.setPtails(0.5);
+        coin.flip(1000);
+        System.out.println("After flipping 1000 times:");
         System.out.println("Heads: " + coin.getHeads());
         System.out.println("Tails: " + coin.getTails());
     }
