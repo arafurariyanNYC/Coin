@@ -10,5 +10,9 @@ public class Main {
         System.out.println("After flipping 1000 times:");
         System.out.println("Heads: " + coin.getHeads());
         System.out.println("Tails: " + coin.getTails());
+        
+        Player poo = new Player(100);
+        poo.flip(coin, "heads", 50);
+        System.out.println("Player balance: " + poo.getBalance());
     }
 }
